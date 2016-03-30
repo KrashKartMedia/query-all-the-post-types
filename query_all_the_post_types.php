@@ -5,7 +5,7 @@
  * Description: Returns a list of all the post types on your current install of wordpress.
  * Version: 1.0
  * Author: Russell Aaron
- * Author URI: http://russeenvy.com
+ * Author URI: http://russellenvy.com
  * Text Domain: query_all_the_post_types
  * License: GPL2
  * GitHub Plugin URI: https://github.com/KrashKartMedia/query-all-the-post-types
