@@ -32,7 +32,7 @@ function qatpt_settings_link( $links ) {
 $plugin = plugin_basename( __FILE__ );
 add_filter( "plugin_action_links_$plugin", 'qatpt_settings_link' );
 
-
+//here is where we the post types thanks to https://codex.wordpress.org/Function_Reference/get_post_types
 function query_all_the_post_types_function() {
   $all_post_types = get_post_types();
   foreach ( $all_post_types as $post_type ) {
