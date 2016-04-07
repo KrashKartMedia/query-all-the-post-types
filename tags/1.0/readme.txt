@@ -12,11 +12,9 @@ A quick and easy way to view a list of all the post types currently registered o
 
 == Description ==
 
-You install a plugin and it registers a portfolio custom post type. You would assume that the post type is "portfolio". 
-After hours of digging, you discover that it's actually "porftolio_awesome_type". Wouldn't it be easier to have a list of all your post types, custom or default?
-We have you covered. Simply install and view the settings page. Thats where you'll find all the active post types on your current WP Install.
+You install a plugin and it registers a portfolio custom post type. You would assume that the post type is "portfolio". After hours of digging, you discover that it's actually "porftolio_awesome_type". Wouldn't it be easier to have a list of all your post types, custom or default? We have you covered. Simply install and view the settings page. Thats where you'll find all the active post types on your current WP Install.
 
-Supports all post types that come default with WordPress and all Custom Post types. Works with WooCommerce, Easy Digital Downloads and Custom Post Type UI & many more.
+Supports all post types that come default with WordPress and all Custom Post types. Works with WooCommerce, Easy Digital Downloads, Custom Post Type UI, Pods & many more to come.
 
 == Installation ==
 

@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Query All The Post Types
- * Plugin URI: https://github.com/KrashKartMedia/query-all-the-post-types
+ * Plugin URI: https://wordpress.org/plugins/query-all-the-post-types/
  * Description: Returns a list of all the post types on your current install of wordpress.
  * Version: 1.0
  * Author: Russell Aaron
- * Author URI: http://russellaaron.vegas
+ * Author URI: http://russellenvy.com
  * Text Domain: query_all_the_post_types
  * License: GPL2
  * GitHub Plugin URI: https://github.com/KrashKartMedia/query-all-the-post-types
@@ -32,7 +32,7 @@ function qatpt_settings_link( $links ) {
 $plugin = plugin_basename( __FILE__ );
 add_filter( "plugin_action_links_$plugin", 'qatpt_settings_link' );
 
-
+//here is where we the post types thanks to https://codex.wordpress.org/Function_Reference/get_post_types
 function query_all_the_post_types_function() {
   $all_post_types = get_post_types();
   foreach ( $all_post_types as $post_type ) {
