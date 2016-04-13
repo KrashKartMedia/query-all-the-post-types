@@ -1,0 +1,64 @@
+.settings_box{
+	border: 4px solid #0b3e6f;
+	color:#365666;
+	font-weight: 100;
+	padding: 30px;
+	margin-top: 10px;
+	border-radius: 05px;
+}
+
+.settings_box h1{
+	background-color: #365666; 
+	border: 1px solid #0b3e6f;
+	padding: 15px;
+	height: 100%;
+	border-radius: 05px;
+	color:#000;
+}
+
+.gs_logo{
+	margin-top: 25px;
+}
+.logo_div{
+	width: 95%;
+}
+
+.version_control{
+width: 95%;
+text-align: right;
+margin-top: 10px;
+}
+
+.wrap h2 {
+	font-weight:100;
+	color:#000;
+}
+
+.wrap .updated p{
+	color:#000000;
+}
+.wrap .updated p a{
+	color:#000000;
+}
+
+.wrap .form-table th{
+	color:#000;
+}
+
+.gs-russ {
+	display: inline-block;
+}
+
+.gs-russ1 {
+	display: inline-block;
+	vertical-align: top;
+}
+.container {
+	margin-left: 0px !important;
+	width: 100%;
+}
+
+.posttype {
+	color:#0c457a !important;
+}
+
