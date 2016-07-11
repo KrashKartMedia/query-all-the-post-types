@@ -52,6 +52,6 @@ This section describes how to install the plugin and get it working.
 *Was adding a menu item for the settings page. Now, the plugin creates a menu options page. Visit Settings > Query The CPT’s
 
 = 1.0 =
-*Release Date - 11th January, 2016*
+*Release Date - 31st March, 2016*
 
 * First release *

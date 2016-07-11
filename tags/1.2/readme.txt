@@ -48,10 +48,14 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
+= 1.2 =
+*Added jQuery accordion to the settings page. This way each post type is inside of it’s own accordion item.
+*Added in a query to get all of the Taxonomies for each post type. Now you can see all of the post types and taxonomies.
+
 = 1.1 =
 *Was adding a menu item for the settings page. Now, the plugin creates a menu options page. Visit Settings > Query The CPT’s
 
 = 1.0 =
-*Release Date - 11th January, 2016*
+*Release Date - 31st March, 2016*
 
 * First release *
