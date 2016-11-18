@@ -4,7 +4,7 @@ Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard
 Requires at least: 4.1
 Tested up to: 4.6.1
-Stable tag: 1.5
+Stable tag: 1.6.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,9 +57,19 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
+= 1.6.1 =
+* Fixed Settings Link. Our code changed all settings links, for all plugins, to our url. It was great promotion, but not intended.
+*Removed the events calendar post types tribe-ea-record & deleted_event. Add to list of removed post types.
+*Trying something new with links. Links in Ad section take you directly to the plugins install page, with the search term in the url.
+
+= 1.6 =
+*Dequeue the events calendar jQuery ui styles on our setting page.
+*Update jQuery Theme Roller for better response time.
+* Changed links to See All post_types or See All taxonomies.
+
 = 1.5 =
 *One file was doing all the work. Added includes to break upspecific functions.
-*Changed links titles from Click Here to See All - See All
+*Changed links titles from Click Here to See All - See All.
 *Removed New: from plugin settings page description.
 
 = 1.4 =

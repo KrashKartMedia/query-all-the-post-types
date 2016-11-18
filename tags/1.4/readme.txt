@@ -3,7 +3,7 @@ Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard
 Requires at least: 4.1
-Tested up to: 4.5.2
+Tested up to: 4.6
 Stable tag: 1.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
