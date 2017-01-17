@@ -3,25 +3,60 @@ Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard, list
 Requires at least: 4.1
-Tested up to: 4.6.1
-Stable tag: 1.7
+Tested up to: 4.7.1
+Stable tag: 1.7.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A quick and easy way to view a list of all the post types & associated taxonomies currently registered on your WordPress Install.
+A top level view of all the post types & associated taxonomies currently registered on your WordPress install.
 
 == Description ==
 
-You install a plugin and it registers a "portfolio" custom post type. You would assume that the post type is "portfolio". After hours of digging, you discover that it's actually "porftolio_awesome_type". Wouldn't it be easier to have a top level view of all your post types & associated taxonomies, custom or default? We have you covered. Simply install and view the settings page. You'll find all the active post types & associated taxonomies on your current WP Install.
+You install a plugin and it registers a Portfolio custom post type. You would assume the post type is named "portfolio". After hours of digging, you discover it's actually named "porftolio_awesome_type". Wouldn't it be easier to have a top level view of all your post types & associated taxonomies, custom or default? We have you covered. Simply install and view the plugin page. You'll find all the active post types & associated taxonomies on your current WP Install.
 
 Supports all post types that come default with WordPress and all Custom Post types in your theme or plugins. Works with WooCommerce, Easy Digital Downloads, Custom Post Type UI, Pods & many more.
 
+= Plugins We've Tested =
+* Jetpack By WordPress.com
+* Custom Post Type UI
+* Pods
+* Advanced Custom Fields
+* Contact Form 7
+* Hashtag URL Placeholder
+* WP-PageNavi
+* Google XML Sitemaps
+* Theme Check
+* Easy Digital Downloads
+* WooCommerce
+* TinyMCE Advanced
+* Give
+* The Events Calendar
+* bbPress
+* BuddyPress
+* Google Analytics by MonsterInsights
+* Yoast SEO
+* WordPress Importer
+
 = Introduction =
 [youtube https://www.youtube.com/watch?v=vvzRC20sFOQ]
-
+                      
 == Frequently Asked Questions ==
 
-Query All The Post Types does exclude a few post types registered by plugins such as Easy Digital Downloads, The Events Calendar & WooCommerce. These post types are still active and registered. They simply do not have an edit page.
+= Does this plugin work with all plugins & themes? =
+
+As of right now, we have tested 19 of the most popular plugins. More are being added every day. We'll get to themes sometime down the road.
+
+= What version(s) of WordPress have been tested? =
+
+As of now, we've tested the plugin against the last 5 versions of WordPress.
+
+= What are post type definitions? =
+
+We have set up a check to determine if a post type is public facing, hidden or some type of other custom post type. This is to make it easier for the end user to understand why a custom post type might be hidden from the WordPress Navigation Menu.
+
+= Why is a hidden post type showing as a regular post type? =
+
+Simple. We have not added it to the function that defines what is a hidden post type. Open a suppor ticket and let us know if you find a plugin with a hidden post type.
 
 == Installation ==
 
@@ -54,6 +89,21 @@ This section describes how to install the plugin and get it working.
 1. Plugin page shows you a list of all the post types.
 
 == Changelog ==
+
+= 1.7.2 =
+* Removed function to hide hidden post types.
+* Added hidden post types to main query on page.
+* Assigned a definition to each post type
+* Updated thickbox popup to display a list of plugins & wordpress core versions that have been tested.
+* Added in 1/2 colums for each post type jQuery Accordion
+* Displaying some Post Type Object Details. Such as Name, Singular Name and Menu / Submenu Name.
+* Updated Page Settings UI.
+* Changed Excluded From Button text. Now reads Tested On.
+
+= 1.7.1 =
+* Updated Version Numbering Conflicts.
+* Excluded more Custom Post Types without Edit Screen - custom_css & customize_changeset
+* Updated Bootstrap Scripts for faster UI. Only loads Bootstrap on our settings page.
 
 = 1.7 =
 * Updated UI Visual Look to match Default WP Blue Color.
@@ -102,5 +152,4 @@ This section describes how to install the plugin and get it working.
 
 = 1.0 =
 * Release Date - 31st March, 2016
-
 * First release
