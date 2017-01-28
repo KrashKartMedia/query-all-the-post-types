@@ -3,7 +3,7 @@
  * Plugin Name: Query All The Post Types
  * Plugin URI: https://wordpress.org/plugins/query-all-the-post-types/
  * Description: Returns a list of all the post types on your current install of wordpress.
- * Version: 1.7.2
+ * Version: 1.8
  * Author: Russell Aaron
  * Author URI: http://russellenvy.com
  * Text Domain: query_all_the_post_types
@@ -20,5 +20,4 @@
   $plugin = plugin_basename( __FILE__ );
   add_filter( "plugin_action_links_$plugin", 'qatpt_settings_link' );
   include 'qatp.php';
-  include 'enqueue-scripts.php';
 ?>

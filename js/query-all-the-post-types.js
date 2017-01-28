@@ -1,1 +1,0 @@
-(function ($) {$(document).ready(function () {$accordion = $("#accordiongs");$accordion.accordion({collapsible: true,heightStyle: "content",active: false});});})(jQuery);
