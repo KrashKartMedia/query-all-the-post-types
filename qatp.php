@@ -87,11 +87,13 @@
       //if contact form 7
         elseif ( in_array( $post_type, array( 'wpcf7_contact_form' ) ) ) {
         echo '<div class="postbox">';
-        echo '<div style="background-color:#b4b9be;width:50%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>' . esc_attr__( $post_type ) . ' - other</span></h2></div>';
-        echo '<div style="width:50%;display:inline-block;text-align:right;"><h2><span>
-        <a class="button-secondary" href="' . admin_url( 'admin.php?page=wpcf7') . '">View All</a> 
-        <a class="button-secondary" href="' . admin_url( 'admin.php?page=wpcf7-new' ) . '">Add New</a>
-        </span></h2></div>';
+        echo '<div style="background-color: #00a0d2;color: #fff;">';
+          echo '<div style="width:50%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>' . esc_attr__( $post_type ) . ' - other</span></h2></div>';
+          echo '<div style="width:50%;display:inline-block;text-align:right;"><h2><span>
+          <a class="button-secondary" href="' . admin_url( 'admin.php?page=wpcf7') . '">View All</a> 
+          <a class="button-secondary" href="' . admin_url( 'admin.php?page=wpcf7-new' ) . '">Add New</a>
+          </span></h2></div>';
+        echo '</div>';
           echo '<div class="inside">';
             echo '<table class="widefat" cellspacing="0">';
               echo '<tbody>';
@@ -273,12 +275,14 @@
           echo '<h2 style="background-color:#0074a2; color:#fff;"><span>About the plugin</span></h2>';
             echo '<div class="inside">';
               echo '<p>These are all of the <b>post types, custom post types &amp; associated taxonomies</b> currently active (registered) on your WordPress install right now.</p>';
+              echo '<p><strong>Please note</strong>: Deactivating a theme or plugin may result in removing a post type or custom post type.</p>';
+              echo '<p>Version: 1.8 | <a style="text-decoration:none;" target="_blank" href="https://wordpress.org/plugins/query-all-the-post-types/changelog/">View Changelog</a></p>';
             echo '</div>';
           echo ' </div>';
       //stop postbox
           //start postbox
          echo '<div class="postbox">';
-            echo '<h2 style="background-color:#0074a2; color:#fff;"><span>Regular, Hidden, &amp; Other CPTS</span></h2>';
+            echo '<h2 style="background-color:#0074a2; color:#fff;"><span>Custom Post Type Details</span></h2>';
               echo '<div class="inside">';
                 echo '<p><strong>Regular CPT</strong>: Registered post type showing all posts inside of the post type.</p>';
                 echo '<p><strong>Hidden Post Types</strong>: Registered post types without an edit screen.</p>';
@@ -331,8 +335,5 @@
       echo '</div>';
         //stop wrap
         //start footer
-        echo '<hr />';
-        echo 'Query All The Post Types | Version - 1.8| <a style="text-decoration:none;" target="_blank" href="https://wordpress.org/plugins/query-all-the-post-types/changelog/">View Changelog</a>';
-      echo '</div>';
     };
 ?>
