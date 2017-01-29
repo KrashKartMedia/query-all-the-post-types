@@ -90,6 +90,23 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
+= 1.8 =
+* Removed enqueue_scripts & other files.
+* Removed jQuery Themeroller & html to render.
+* Removed Bootstrap & html to render.
+* Removed Sidebar of suggested plugins & images.
+* Removed Thickbox & html to render.
+* Removed Footer Details & Moved to another place.
+* Refactored page to show hidden, regular and other post types.
+* Added new HTML to render page. Thanks to bueltge on Github.
+* Added New Sidebar with plugin details, CPT Details & Plugins/Core versions tested on.
+* Added new CPT details like Plural name, singular name, menu name, hierarchical & taxonomies.
+* Added buttons to View All/ Add New posts to custom post types.
+* Added new functions to link to contact form 7 custom pages. CF& doenst use CPTS like other plugins.
+* Color coded hidden, regular and other post types.
+* Updated list of CPTS and Taxonomies and updated to show link or not.
+* Updated Version Number & Tested Up To Number.
+
 = 1.7.2 =
 * Removed function to hide hidden post types.
 * Added hidden post types to main query on page.
