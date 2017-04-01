@@ -3,60 +3,37 @@ Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard, list
 Requires at least: 4.1
-Tested up to: 4.7.2
-Stable tag: 1.8
+Tested up to: 4.7.3
+Stable tag: 1.9
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A top level view of all the post types & associated taxonomies currently registered on your WordPress install.
+A top level view of all the active post types, custom post types & associated taxonomies currently registered on your WordPress install.
 
 == Description ==
 
-You install a plugin and it registers a Portfolio custom post type. You would assume the post type is named "portfolio". After hours of digging, you discover it's actually named "porftolio_awesome_type". Wouldn't it be easier to have a top level view of all your post types & associated taxonomies, custom or default? We have you covered. Simply install and view the plugin page. You'll find all the active post types & associated taxonomies on your current WP Install.
+Every post type has a specific name. In that unique name lies a problem. Some post types are called "calendar" and some are called "my_other_calendar". These unique names can become a problem when building custom templates, shortcodes, or queries for your WordPress install. Query All The Post Types is a free WordPress plugin helping WordPress website owners, and developers, view of all the active post types, custom post types & associated taxonomies currently registered on your WordPress install.
 
-Supports all post types that come default with WordPress and all Custom Post types in your theme or plugins. Works with WooCommerce, Easy Digital Downloads, Custom Post Type UI, Pods & many more.
-
-= Plugins We've Tested =
-* Jetpack By WordPress.com
-* Custom Post Type UI
-* Pods
-* Advanced Custom Fields
-* Contact Form 7
-* Hashtag URL Placeholder
-* WP-PageNavi
-* Google XML Sitemaps
-* Theme Check
-* Easy Digital Downloads
-* WooCommerce
-* TinyMCE Advanced
-* Give
-* The Events Calendar
-* bbPress
-* BuddyPress
-* Google Analytics by MonsterInsights
-* Yoast SEO
-* WordPress Importer
+Each post type is defined as a Regular CPT, Hidden CPT, WordPress Core - Regular CPT, WordPress Core - Hidden CPT, Regular CPT, Hidden CPT, WooCommerce Core Regular CPT, WooCommerce Core Hidden CPT, and Other. Query All The Post Types displays some object data for each post type. Object data includes: post type name, plural name, singular name, menu name, is public queryable, is hierarchical.
 
 = Introduction =
 [youtube https://www.youtube.com/watch?v=vvzRC20sFOQ]
                       
 == Frequently Asked Questions ==
 
-= Does this plugin work with all plugins & themes? =
-
-As of right now, we have tested 19 of the most popular plugins. More are being added every day. We'll get to themes sometime down the road.
-
 = What version(s) of WordPress have been tested? =
 
-As of now, we've tested the plugin against the last 5 versions of WordPress.
+As of now, we've tested the plugin on WordPress Version 4.1 and higher.
+
+= Does this plugin work with all plugins & themes? =
+
+Yes. However, it's impossible to know every post type active on your WordPress website. The post types we do know about, in popular themes and plugins, will be listed as Regular CPT, Hidden CPT, WordPress Core - Regular CPT, WordPress Core - Hidden CPT, Regular CPT, Hidden CPT, WooCommerce Core Regular CPT, WooCommerce Core Hidden CPT, and Other.
+
+A definition is provided in the sidebar of the plugin settings page.
 
 = What are post type definitions? =
 
 We have set up a check to determine if a post type is public facing, hidden or some type of other custom post type. This is to make it easier for the end user to understand why a custom post type might be hidden from the WordPress Navigation Menu.
-
-= Why is a hidden post type showing as a regular post type? =
-
-Simple. We have not added it to the function that defines what is a hidden post type. Open a suppor ticket and let us know if you find a plugin with a hidden post type.
 
 == Installation ==
 
@@ -89,6 +66,25 @@ This section describes how to install the plugin and get it working.
 1. Plugin page shows you a list of all the post types.
 
 == Changelog ==
+
+= 1.9 =
+* Removed: Post type names in the headings. Changed to Regular CPT, Hidden CPT, WordPress Core - Regular CPT, WordPress Core - Hidden CPT, Regular CPT, Hidden CPT, WooCommerce Core Regular CPT, WooCommerce Core Hidden CPT, and Other.
+* Added: New column for the post type name.
+* Added: Defined version number to use as a constant in the plugin.
+* Added: New colors for each type of post type heading.
+* Added: Now supporting WooCommerce Core Post Types from .org plugin. Has a unique color just for WooCommerce Post Types.
+* Added: Give a lot of WooCommerce Add On plugins to test. Defined properly.
+* Added: Color cordinated definitions to make post type definitions more recognizable.
+* Fixed: CSS style fixes.
+* Fixed: Link to changelog
+* Fixed: Post types appear in alphabetical order. Starting with underscores, numbers, letters.
+* Fixed: Changed Public Queryable and Hierarchical to Is Public Queryable and Is Hierarchical.
+
+= 1.8.1 =
+* Updated files with define path exit script. If direct file path is called, exit.
+* Updated number of WP versions tested on to 7.
+* Tested on 4.7.3.
+* Version number bumb.
 
 = 1.8 =
 * Removed enqueue_scripts & other files.

@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {exit;}
 //creates the options page insde of wp-admin dashboard.
   add_action( 'admin_menu', 'wpquery_all_post_types_custom_menu_page' );
   function wpquery_all_post_types_custom_menu_page(){

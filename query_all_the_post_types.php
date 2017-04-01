@@ -2,15 +2,16 @@
 /**
  * Plugin Name: Query All The Post Types
  * Plugin URI: https://wordpress.org/plugins/query-all-the-post-types/
- * Description: Returns a list of all the post types on your current install of wordpress.
- * Version: 1.8
+ * Description: A top level view of all the active post types, custom post types & associated taxonomies currently registered on your WordPress install.
+ * Version: 1.9
  * Author: Russell Aaron
  * Author URI: http://russellenvy.com
  * Text Domain: query_all_the_post_types
  * License: GPL2
  */
   if ( ! defined( 'ABSPATH' ) ) {exit;}
-  include 'create-menu.php';
+define( 'qatp_version', '1.9' );
+include 'create-menu.php';
 //code used from Hugh Lashbrooke - http://www.hughlashbrooke.com/2012/07/wordpress-add-plugin-settings-link-to-plugins-page/
   function qatpt_settings_link( $links ) {
   $settings_link = '<a href="/wp-admin/options-general.php?page=query_all_the_post_types">' . __( 'Settings' ) . '</a>';
