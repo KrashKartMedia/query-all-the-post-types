@@ -9,85 +9,85 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
       //start core hidden cpts
        if ( in_array( $post_type, array( 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', ) ) ) {
         echo '<div class="postbox">';
-        echo '<div style="background-color:#32373c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>WordPress Core - Hidden CPT</span></h2></div>';
-          echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
-              echo '<tbody>';
-                  //start the TR's
-                  //another tr
-                  echo '<td class="row-title">';
-                      echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
-                  echo '<tr class="alternate">';
+          echo '<div style="background-color:#32373c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>WordPress Core - Hidden CPT</span></h2></div>';
+            echo '<div class="inside">';
+              echo '<table class="widefat">';
+                echo '<tbody>';
+                    //start the TR's
+                    //another tr
                     echo '<td class="row-title">';
-                     echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
+                        echo 'Post Type Name:' . ' ' . $post_type . '' ;
                     echo '</td>';
-                  echo '</tr>';
-                  //another tr
-                  echo '<tr>';
-                    echo '<td class="row-title">';
-                      echo 'Singular name:' . ' ' . $obj->labels->singular_name . '' ;
-                    echo '</td>';
-                  echo '</tr>';
-                  //another tr
-                  echo '<tr class="alternate">';
-                    echo '<td class="row-title">';
-                     echo 'Menu Name:' . ' ' . $obj->labels->menu_name . '' ;
-                    echo '</td>';
-                  echo '</tr>';
-                  //another tr
-                  $is_pub_query = $obj->publicly_queryable;
-                    if ($is_pub_query === true){
-                  echo '<tr>';
-                    echo '<td class="row-title">';
-                      echo 'Is Public Queryable: Yes';
-                    echo '</td>';
-                  echo '</tr>';
-                   }
-                   else{
+                    echo '<tr class="alternate">';
+                      echo '<td class="row-title">';
+                       echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
+                      echo '</td>';
+                    echo '</tr>';
+                    //another tr
                     echo '<tr>';
-                    echo '<td class="row-title">';
-                      echo 'Is Public Queryable: No';
-                    echo '</td>';
-                  echo '</tr>';
-                   }
-                   //another tr
-                  $is_hie = $obj->hierarchical;
-                    if ($is_hie === true){
-                  echo '<tr class="alternate">';
-                    echo '<td class="row-title">';
-                      echo 'Is Hierarchical: Yes';
-                    echo '</td>';
-                  echo '</tr>';
-                   }
-                   else{
-                   echo '<tr class="alternate">';
-                    echo '<td class="row-title">';
-                      echo 'Is Hierarchical: No';
-                    echo '</td>';
-                  echo '</tr>';
-                  }
-                  //another tr
-                  echo '<tr>';
-                    echo '<td class="row-title">';
-                      echo 'Taxonomies:';
-                      $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
-                      foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class', 'product_visibility' ) ) ) {
-                          // Custom stuff here
-                          echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
-                          } else {
-                            //if there is a taxonomy, echo it out
-                            echo ' <a class="posttype" href="' . admin_url( 'edit-tags.php?taxonomy=' . $taxonomy_object . '&post_type=' . $post_type ) . '">' . esc_attr__( $taxonomy_object ) . '</a>, ';
-                          }
-                      }
-                    echo '</td>';
-                  echo '</tr>';
-                  //stop the TR's
-              echo '</tbody>';
+                      echo '<td class="row-title">';
+                        echo 'Singular name:' . ' ' . $obj->labels->singular_name . '' ;
+                      echo '</td>';
+                    echo '</tr>';
+                    //another tr
+                    echo '<tr class="alternate">';
+                      echo '<td class="row-title">';
+                       echo 'Menu Name:' . ' ' . $obj->labels->menu_name . '' ;
+                      echo '</td>';
+                    echo '</tr>';
+                    //another tr
+                    $is_pub_query = $obj->publicly_queryable;
+                      if ($is_pub_query === true){
+                    echo '<tr>';
+                      echo '<td class="row-title">';
+                        echo 'Is Public Queryable: Yes';
+                      echo '</td>';
+                    echo '</tr>';
+                     }
+                     else{
+                      echo '<tr>';
+                      echo '<td class="row-title">';
+                        echo 'Is Public Queryable: No';
+                      echo '</td>';
+                    echo '</tr>';
+                     }
+                     //another tr
+                    $is_hie = $obj->hierarchical;
+                      if ($is_hie === true){
+                    echo '<tr class="alternate">';
+                      echo '<td class="row-title">';
+                        echo 'Is Hierarchical: Yes';
+                      echo '</td>';
+                    echo '</tr>';
+                     }
+                     else{
+                     echo '<tr class="alternate">';
+                      echo '<td class="row-title">';
+                        echo 'Is Hierarchical: No';
+                      echo '</td>';
+                    echo '</tr>';
+                    }
+                    //another tr
+                    echo '<tr>';
+                      echo '<td class="row-title">';
+                        echo 'Taxonomies:';
+                        $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
+                        foreach ( $taxonomy_objects as $taxonomy_object ) {
+                           if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class', 'product_visibility' ) ) ) {
+                            // Custom stuff here
+                            echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
+                            } else {
+                              //if there is a taxonomy, echo it out
+                              echo ' <a class="posttype" href="' . admin_url( 'edit-tags.php?taxonomy=' . $taxonomy_object . '&post_type=' . $post_type ) . '">' . esc_attr__( $taxonomy_object ) . '</a>, ';
+                            }
+                        }
+                      echo '</td>';
+                    echo '</tr>';
+                    //stop the TR's
+                echo '</tbody>';
             echo '</table>';
           echo '</div>';
-      echo '</div>';
+        echo '</div>';
        }
        //stop core hidden cpts
        //start core shown cpts
@@ -99,13 +99,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
           </span></h2></div>';
         echo '</div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
-                 echo '<td class="row-title">';
+                  echo '<td class="row-title">';
                       echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -187,13 +187,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
           </span></h2></div>';
         echo '</div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
                   echo '<td class="row-title">';
                       echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -271,13 +271,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
         echo '<div style="background-color: #9E6595;color: #fff;">';
           echo '<div style="width:50%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>WooCommerce Core Hidden CPT</span></h2></div></div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
                   echo '<td class="row-title">';
                       echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -360,13 +360,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
           </span></h2></div>';
         echo '</div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
                   echo '<td class="row-title">';
                       echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -447,13 +447,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
           </span></h2></div>';
         echo '</div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
-                 echo '<td class="row-title">';
+                  echo '<td class="row-title">';
                       echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -531,13 +531,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
         echo '<div class="postbox">';
         echo '<div style="background-color:#82878c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>Hidden CPT</span></h2></div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
-                   echo '<td class="row-title">';
-                      echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '<td class="row-title">';
+                    echo 'Post Type Name:' . ' ' . $post_type . '' ;
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -614,13 +614,13 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
        echo '<div class="postbox">';
         echo '<div style="background-color:#000;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>Other</span></h2></div>';
           echo '<div class="inside">';
-            echo '<table class="widefat" cellspacing="0">';
+            echo '<table class="widefat">';
               echo '<tbody>';
                   //start the TR's
                   //another tr
                   echo '<td class="row-title">';
                       echo 'Post Type Name:' . ' ' . $post_type . '' ;
-                    echo '</td>';
+                  echo '</td>';
                   echo '<tr class="alternate">';
                     echo '<td class="row-title">';
                      echo 'Plural Name:' . ' ' . $obj->labels->name . '' ;
@@ -715,6 +715,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
             echo '<div class="inside">';
               echo '<p>These are all of the <b>post types, custom post types &amp; associated taxonomies</b> currently active (registered) on your WordPress install right now.</p>';
               echo '<p><strong>Please note</strong>: Deactivating a theme or plugin may result in removing a post type or custom post type.</p>';
+              echo '<p><strong>Post type counter:</strong> Displays the total number of post types. Taking the total number of post types, minus the seven WP core post types, equals the number of post types added by plugins & themes.</p>';
               echo '<p>If you want to know more about post type details, visit <a href="https://codex.wordpress.org/Function_Reference/register_post_type" target="_blank" title="Visit the WordPress Codex">The WordPress Codex Register Post Type Page</a>.</p>';
               echo '<p>Version: ' . qatp_version . ' | <a style="text-decoration:none;" target="_blank" href="https://wordpress.org/plugins/query-all-the-post-types/changelog/">View Changelog</a></p>';
             echo '</div>';
@@ -728,10 +729,9 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                $wp_core_cpts = 7;
                $total_cpts = count( get_post_types() );
                $cpts_difference = $total_cpts - $wp_core_cpts;
-               echo '<p>Post Types Added By Themes/Plugins: ' . $cpts_difference . '</p>';
+               echo '<p>Added Post Types: ' . $cpts_difference . '</p>';
                echo '<p>Number of Total Post Types: ' . count( get_post_types() ) . '</p>';
               echo '</div>';
-
             echo ' </div>';
           //stop postbox
           //start postbox
