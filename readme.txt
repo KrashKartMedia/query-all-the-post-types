@@ -1,10 +1,10 @@
-=== Query All The Post Types ===
+=== Query All The Post Types - WordPress Post Type Scanner Plugin ===
 Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard, list
 Requires at least: 4.1
 Tested up to: 4.7.3
-Stable tag: 1.9
+Stable tag: 1.9.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,12 +12,14 @@ A top level view of all the active post types, custom post types & associated ta
 
 == Description ==
 
+Query All The Post Types is a Free WordPress Post Type Scanner Plugin. A great plugin for new WordPress Developers building themes/plugins/custom queries.
+
 Every post type has a specific name. In that unique name lies a problem. Some post types are called "calendar" and some are called "my_other_calendar". These unique names can become a problem when building custom templates, shortcodes, or queries for your WordPress install. Query All The Post Types is a free WordPress plugin helping WordPress website owners, and developers, view of all the active post types, custom post types & associated taxonomies currently registered on your WordPress install.
 
 Each post type is defined as a Regular CPT, Hidden CPT, WordPress Core - Regular CPT, WordPress Core - Hidden CPT, Regular CPT, Hidden CPT, WooCommerce Core Regular CPT, WooCommerce Core Hidden CPT, and Other. Query All The Post Types displays some object data for each post type. Object data includes: post type name, plural name, singular name, menu name, is public queryable, is hierarchical.
 
 = Introduction =
-[youtube https://www.youtube.com/watch?v=vvzRC20sFOQ]
+[youtube https://youtu.be/8raL-2V-5Vw]
                       
 == Frequently Asked Questions ==
 
@@ -66,6 +68,16 @@ This section describes how to install the plugin and get it working.
 1. Plugin page shows you a list of all the post types.
 
 == Changelog ==
+
+= 1.9.2 =
+* Fixed: 1.9.1 changes were not taken by svn.
+
+= 1.9.1 =
+* Fixed: Changelog link in admin panel.
+* Fixed: Unlinked some taxonomies showing up in new WooCommerce version.
+* Fixed: If the post type is hierarchical, we were not showing the taxonomies. 
+* Added: New link to custom post type register page in admin panel.
+* Added: Number of active post types displayed on page.
 
 = 1.9 =
 * Removed: Post type names in the headings. Changed to Regular CPT, Hidden CPT, WordPress Core - Regular CPT, WordPress Core - Hidden CPT, Regular CPT, Hidden CPT, WooCommerce Core Regular CPT, WooCommerce Core Hidden CPT, and Other.

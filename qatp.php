@@ -66,13 +66,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -82,7 +83,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -154,13 +154,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -170,7 +171,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -242,13 +242,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -258,7 +259,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -326,13 +326,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -342,7 +343,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -415,13 +415,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -431,7 +432,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -502,13 +502,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'yst_prominent_words', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -518,7 +519,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -586,13 +586,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                  }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -602,7 +603,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -669,13 +669,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       echo 'Is Hierarchical: No';
                     echo '</td>';
                   echo '</tr>';
+                }
                   //another tr
                   echo '<tr>';
                     echo '<td class="row-title">';
                       echo 'Taxonomies:';
                       $taxonomy_objects = get_object_taxonomies( $post_type, 'names' );
                       foreach ( $taxonomy_objects as $taxonomy_object ) {
-                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class' ) ) ) {
+                         if ( in_array( $taxonomy_object, array( 'post_format', 'product_type', 'nav_menu', 'yst_prominent_words', 'give_log_type', 'edd_log_type', 'product_shipping_class', 'product_visibility' ) ) ) {
                           // Custom stuff here
                           echo ' ' . esc_attr__( $taxonomy_object ) . ', ';
                           } else {
@@ -685,7 +686,6 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
                       }
                     echo '</td>';
                   echo '</tr>';
-                   }
                   //stop the TR's
               echo '</tbody>';
             echo '</table>';
@@ -715,10 +715,19 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
             echo '<div class="inside">';
               echo '<p>These are all of the <b>post types, custom post types &amp; associated taxonomies</b> currently active (registered) on your WordPress install right now.</p>';
               echo '<p><strong>Please note</strong>: Deactivating a theme or plugin may result in removing a post type or custom post type.</p>';
-              echo '<p>Version: ' . qatp_version . ' | <a style="text-decoration:none;" target="_blank" href="https://wordpress.org/plugins/query-all-the-post-types/#changelog/">View Changelog</a></p>';
+              echo '<p>If you want to know more about post type details, visit <a href="https://codex.wordpress.org/Function_Reference/register_post_type" target="_blank" title="Visit the WordPress Codex">The WordPress Codex Register Post Type Page</a>.</p>';
+              echo '<p>Version: ' . qatp_version . ' | <a style="text-decoration:none;" target="_blank" href="https://wordpress.org/plugins/query-all-the-post-types/changelog/">View Changelog</a></p>';
             echo '</div>';
           echo ' </div>';
-      //stop postbox
+          //stop postbox
+          //start postbox
+          echo '<div class="postbox">';
+            echo '<h2 style="background-color:#0074a2; color:#fff;"><span>Post Type Counter</span></h2>';
+              echo '<div class="inside">';
+               echo '<p>Number of Post Types: ' . count( get_post_types() ) . '</p>';
+              echo '</div>';
+            echo ' </div>';
+          //stop postbox
           //start postbox
          echo '<div class="postbox">';
             echo '<h2 style="background-color:#0074a2; color:#fff;"><span>Custom Post Type Details</span></h2>';
