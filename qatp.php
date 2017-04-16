@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
     foreach ( $all_post_types as $post_type ) {
       $obj = get_post_type_object( $post_type );
       //start core hidden cpts
-       if ( in_array( $post_type, array( 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset' ) ) ) {
+       if ( in_array( $post_type, array( 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', ) ) ) {
         echo '<div class="postbox">';
         echo '<div style="background-color:#32373c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>WordPress Core - Hidden CPT</span></h2></div>';
           echo '<div class="inside">';
@@ -527,7 +527,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
       }
       //stop Regular CPTs
       // Start all hidden cpts
-      else if ( in_array( $post_type, array( 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'give_log', 'give_payment', '_pods_pod', '_pods_field', 'tablepress_table', 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', ) ) ) {
+      else if ( in_array( $post_type, array( 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'give_log', 'give_payment', '_pods_pod', '_pods_field', 'tablepress_table', 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'maintainn-notes' ) ) ) {
         echo '<div class="postbox">';
         echo '<div style="background-color:#82878c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>Hidden CPT</span></h2></div>';
           echo '<div class="inside">';
