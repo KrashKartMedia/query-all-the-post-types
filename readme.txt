@@ -69,6 +69,9 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
+= 1.9.3 =
+* Added: Post Type Counter Details. Number of post types added by themes and plugins minus the seven core post types equals total number of post types.
+
 = 1.9.2 =
 * Fixed: 1.9.1 changes were not taken by svn.
 
