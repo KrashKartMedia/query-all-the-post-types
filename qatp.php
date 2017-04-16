@@ -724,8 +724,14 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
           echo '<div class="postbox">';
             echo '<h2 style="background-color:#0074a2; color:#fff;"><span>Post Type Counter</span></h2>';
               echo '<div class="inside">';
-               echo '<p>Number of Post Types: ' . count( get_post_types() ) . '</p>';
+               echo '<p>WP Core Post Types: 7</p>'; 
+               $wp_core_cpts = 7;
+               $total_cpts = count( get_post_types() );
+               $cpts_difference = $total_cpts - $wp_core_cpts;
+               echo '<p>Post Types Added By Themes/Plugins: ' . $cpts_difference . '</p>';
+               echo '<p>Number of Total Post Types: ' . count( get_post_types() ) . '</p>';
               echo '</div>';
+
             echo ' </div>';
           //stop postbox
           //start postbox
