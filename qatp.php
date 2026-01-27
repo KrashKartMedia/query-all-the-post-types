@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
     foreach ( $all_post_types as $post_type ) {
       $obj = get_post_type_object( $post_type );
       //start core hidden cpts
-       if ( in_array( $post_type, array( 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', ) ) ) {
+       if ( in_array( $post_type, array( 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache', 'user_request', 'wp_block', ) ) ) {
         echo '<div class="postbox">';
           echo '<div style="background-color:#32373c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>WordPress Core - Hidden CPT</span></h2></div>';
             echo '<div class="inside">';
@@ -439,7 +439,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
       echo '</div>';
       } 
       //Start Regular CPTs
-      else if ( in_array( $post_type, array( 'acf', 'bp-email', 'download', 'forum', 'give_forms', 'reply', 'topic', 'tribe_events', 'tribe_organizer', 'tribe_venue', ) ) ) {
+      else if ( in_array( $post_type, array( 'acf', 'bp-email', 'download', 'forum', 'give_forms', 'reply', 'topic', 'tribe_events', 'tribe_organizer', 'tribe_venue', 'acf-field-group', 'cookielawinfo', 'elementor_library', ) ) ) {
         echo '<div class="postbox">';
         echo '<div style="background-color: #00a0d2;color: #fff;">';
           echo '<div style="width:50%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>Regular CPT</span></h2></div>';
@@ -527,7 +527,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
       }
       //stop Regular CPTs
       // Start all hidden cpts
-      else if ( in_array( $post_type, array( 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'give_log', 'give_payment', '_pods_pod', '_pods_field', 'tablepress_table', 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'maintainn-notes' ) ) ) {
+      else if ( in_array( $post_type, array( 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'give_log', 'give_payment', '_pods_pod', '_pods_field', 'tablepress_table', 'tribe-ea-record', 'deleted_event', 'edd_log', 'edd_payment', 'edd_discount', 'product_variation', 'shop_order_refund', 'maintainn-notes', 'acf-field', 'jp_pay_order', 'jp_pay_product', 'amn_exact-metrics', 'amn_mi-lite', 'amn_smtp', 'amn_wpforms-lite', 'display_type', 'displayed_gallery', 'flamingo_contact', 'flamingo_inbound', 'flamingo_outbound', 'gal_display_source', 'lightbox_library', 'mc4wp-form', 'ml-slide', 'ml-slider', 'nf_sub', 'ngg_album', 'ngg_gallery', 'ngg_pictures', 'omapi', 'scheduled-action', 'wpforms', 'wpforms_log', ) ) ) {
         echo '<div class="postbox">';
         echo '<div style="background-color:#82878c;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>Hidden CPT</span></h2></div>';
           echo '<div class="inside">';

@@ -3,8 +3,8 @@ Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard, list
 Requires at least: 4.1
-Tested up to: 4.7.3
-Stable tag: 1.9.3
+Tested up to: 5.0
+Stable tag: 1.9.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,10 @@ This section describes how to install the plugin and get it working.
 1. Plugin page shows you a list of all the post types.
 
 == Changelog ==
+
+= 1.9.4 =
+* Installed Most Popular 81 plugins from WordPress.org Tested each Post Type name to see if they're public, private or hidden. Updated our list of arrays.
+* Tested with WP 5.0. Ready to go.
 
 = 1.9.3 =
 * Added: Post Type Counter Details. Number of post types added by themes and plugins minus the seven core post types equals total number of post types.
