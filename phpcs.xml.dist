@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ruleset name="Query All The Post Types">
+	<description>WordPress Coding Standards for Query All The Post Types plugin.</description>
+
+	<!-- What to scan -->
+	<file>.</file>
+
+	<!-- Exclude paths -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<exclude-pattern>/.git/*</exclude-pattern>
+
+	<!-- How to scan -->
+	<arg value="sp"/> <!-- Show sniff codes and progress -->
+	<arg name="basepath" value="."/>
+	<arg name="colors"/>
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="8"/>
+
+	<!-- Rules: Use WordPress standard (complete ruleset) -->
+	<rule ref="WordPress"/>
+
+	<!-- Rules: WordPress-Docs for inline documentation -->
+	<rule ref="WordPress-Docs"/>
+
+	<!-- Configure text domain -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="query-all-the-post-types"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Configure minimum supported WordPress version -->
+	<config name="minimum_wp_version" value="5.0"/>
+
+	<!-- Configure prefixes for naming conventions -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="qatp"/>
+				<element value="QATP"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Allow short array syntax -->
+	<rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
+		<severity>0</severity>
+	</rule>
+</ruleset>

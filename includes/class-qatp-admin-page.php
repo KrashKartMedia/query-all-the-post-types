@@ -162,11 +162,6 @@ class QATP_Admin_Page {
 		echo '<p class="qatp-sidebar-note">' . esc_html__( 'WordPress.org account required.', 'query-all-the-post-types' ) . '</p>';
 		echo '</div></div>';
 
-		// Notifications box.
-		if ( class_exists( 'QATP_Signal_Settings' ) ) {
-			QATP_Signal_Settings::render_sidebar_box();
-		}
-
 		// About box.
 		echo '<div class="qatp-sidebar-box">';
 		echo '<div class="qatp-sidebar-header">';

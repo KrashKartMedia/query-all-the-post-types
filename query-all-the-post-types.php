@@ -26,36 +26,5 @@ require_once QATP_PLUGIN_DIR . 'includes/class-qatp-plugin.php';
 require_once QATP_PLUGIN_DIR . 'includes/class-qatp-admin-page.php';
 require_once QATP_PLUGIN_DIR . 'includes/class-qatp-post-type-classifier.php';
 require_once QATP_PLUGIN_DIR . 'includes/class-qatp-post-type-renderer.php';
-require_once QATP_PLUGIN_DIR . 'includes/class-qatp-signal-settings.php';
-require_once QATP_PLUGIN_DIR . 'includes/class-qatp-signal-receiver.php';
 
 add_action( 'plugins_loaded', array( 'QATP_Plugin', 'init' ) );
-
-// Activation hook - record install time.
-register_activation_hook( __FILE__, 'qatp_activate' );
-
-// Deactivation hook - remove Signal Hub credentials.
-register_deactivation_hook( __FILE__, 'qatp_deactivate' );
-
-/**
- * Run on plugin activation.
- */
-function qatp_activate() {
-	// Record install time for signal delay calculations.
-	if ( ! get_option( 'qatp_installed_time' ) ) {
-		update_option( 'qatp_installed_time', time() );
-	}
-}
-
-/**
- * Run on plugin deactivation.
- * Removes Signal Hub settings from the database.
- */
-function qatp_deactivate() {
-	// Remove Signal Hub settings.
-	delete_option( 'qatp_signal_settings' );
-
-	// Remove signal transients.
-	delete_transient( 'signal_last_fetch_qatp' );
-	delete_transient( 'signal_data_qatp' );
-}
