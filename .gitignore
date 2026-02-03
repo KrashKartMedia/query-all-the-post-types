@@ -22,3 +22,4 @@ Thumbs.db
 # Local config (keep .dist versions)
 phpcs.xml
 .eslintrc.local.json
+phpcs.xml.dist
