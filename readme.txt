@@ -3,7 +3,7 @@ Contributors: GeekStreetWP
 Author URI: https://russellenvy.com
 Tags: post types, custom post type, cpt, developer tools, woocommerce
 Requires at least: 5.0
-Tested up to: 6.7
+Tested up to: 6.9
 Stable tag: 2.0.0
 Requires PHP: 7.4
 License: GPLv2
