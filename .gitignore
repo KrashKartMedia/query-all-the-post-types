@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Build artifacts
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Local config (keep .dist versions)
+phpcs.xml
+.eslintrc.local.json
