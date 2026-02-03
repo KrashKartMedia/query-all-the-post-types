@@ -133,7 +133,7 @@ class QATP_Post_Type_Renderer {
 		foreach ( $rows as $label => $value ) {
 			$alt = ( 0 === $i % 2 ) ? '' : ' alternate';
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- $value is pre-escaped above.
-			echo '<tr class="' . esc_attr( $alt ) . '"><td class="qatp-label">' . esc_html( $label ) . '</td><td>' . $value . '</td></tr>';
+			echo '<tr class="' . esc_attr( $alt ) . '"><th scope="row" class="qatp-label">' . esc_html( $label ) . '</th><td>' . $value . '</td></tr>';
 			++$i;
 		}
 		echo '</tbody></table>';
@@ -208,7 +208,7 @@ class QATP_Post_Type_Renderer {
 		foreach ( $labels as $key => $value ) {
 			$alt = ( 0 === $i % 2 ) ? '' : ' alternate';
 			echo '<tr class="' . esc_attr( $alt ) . '">';
-			echo '<td class="qatp-label">' . esc_html( $key ) . '</td>';
+			echo '<th scope="row" class="qatp-label">' . esc_html( $key ) . '</th>';
 			echo '<td>' . esc_html( $value ) . '</td>';
 			echo '</tr>';
 			++$i;

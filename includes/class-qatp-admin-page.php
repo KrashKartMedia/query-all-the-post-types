@@ -135,7 +135,7 @@ class QATP_Admin_Page {
 		// Legend box.
 		echo '<div class="qatp-sidebar-box">';
 		echo '<div class="qatp-sidebar-header">';
-		echo '<span class="dashicons dashicons-editor-help qatp-sidebar-icon"></span>';
+		echo '<span class="dashicons dashicons-editor-help qatp-sidebar-icon" aria-hidden="true"></span>';
 		echo '<h3>' . esc_html__( 'Legend', 'query-all-the-post-types' ) . '</h3>';
 		echo '</div>';
 		echo '<div class="qatp-sidebar-body qatp-legend-body">';
@@ -151,7 +151,7 @@ class QATP_Admin_Page {
 		// Feedback box.
 		echo '<div class="qatp-sidebar-box">';
 		echo '<div class="qatp-sidebar-header">';
-		echo '<span class="dashicons dashicons-star-filled qatp-sidebar-icon"></span>';
+		echo '<span class="dashicons dashicons-star-filled qatp-sidebar-icon" aria-hidden="true"></span>';
 		echo '<h3>' . esc_html__( 'Feedback', 'query-all-the-post-types' ) . '</h3>';
 		echo '</div>';
 		echo '<div class="qatp-sidebar-body">';
@@ -165,7 +165,7 @@ class QATP_Admin_Page {
 		// About box.
 		echo '<div class="qatp-sidebar-box">';
 		echo '<div class="qatp-sidebar-header">';
-		echo '<span class="dashicons dashicons-info-outline qatp-sidebar-icon"></span>';
+		echo '<span class="dashicons dashicons-info-outline qatp-sidebar-icon" aria-hidden="true"></span>';
 		echo '<h3>' . esc_html__( 'About', 'query-all-the-post-types' ) . '</h3>';
 		echo '</div>';
 		echo '<div class="qatp-sidebar-body">';

@@ -3,7 +3,7 @@
  * Plugin Name: Query All The Post Types
  * Plugin URI:  https://wordpress.org/plugins/query-all-the-post-types/
  * Description: A developer tool that displays all registered post types with their settings, supports, taxonomies, labels, and REST API endpoints. Find it under <strong>Tools &rarr; Query Post Types</strong>.
- * Version:     2.0.0
+ * Version:     2.0.1
  * Author:      Russell Aaron
  * Author URI:  https://russellenvy.com
  * Text Domain: query-all-the-post-types
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'QATP_VERSION', '2.0.0' );
+define( 'QATP_VERSION', '2.0.1' );
 define( 'QATP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'QATP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'QATP_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );

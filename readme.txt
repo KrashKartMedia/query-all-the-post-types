@@ -4,7 +4,7 @@ Author URI: https://russellenvy.com
 Tags: post types, custom post type, cpt, developer tools, woocommerce
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -92,6 +92,12 @@ Yes. Each site in a multisite network will display its own registered post types
 3. WooCommerce tab with purple-branded styling
 
 == Changelog ==
+
+= 2.0.1 =
+* Accessibility: Added aria-hidden to decorative sidebar icons
+* Accessibility: Settings tables now use proper th scope="row" for screen readers
+* Accessibility: Added prefers-reduced-motion support for users who prefer reduced animations
+* Tested up to WordPress 6.9
 
 = 2.0.0 =
 * **Breaking:** Plugin page moved to **Tools > Query Post Types** (was its own top-level menu)
